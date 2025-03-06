@@ -1,0 +1,9 @@
+apiVersion: cache2.example.com/v1alpha12
+kind: Memcached2
+metadata:
+  labels:
+    app.kubernetes.io/name: multi
+    app.kubernetes.io/managed-by: kustomize
+  name: memcached2-sample
+spec:
+  size: 4

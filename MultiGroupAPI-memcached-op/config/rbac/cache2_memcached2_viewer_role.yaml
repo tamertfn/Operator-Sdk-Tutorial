@@ -1,0 +1,23 @@
+# permissions for end users to view memcached2s.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  labels:
+    app.kubernetes.io/name: multi
+    app.kubernetes.io/managed-by: kustomize
+  name: cache2-memcached2-viewer-role
+rules:
+- apiGroups:
+  - cache2.example.com
+  resources:
+  - memcached2s
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - cache2.example.com
+  resources:
+  - memcached2s/status
+  verbs:
+  - get

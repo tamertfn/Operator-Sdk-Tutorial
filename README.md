@@ -79,7 +79,7 @@ Bu dosya bize sonrasında otomatik olarak verilecek olan CRD'nin tanımlanabilme
 
 <details>
 
-<summary>Düzenlenmiş memcached-op/api/v1alpha1/memcached_types.go</summary>
+<summary>**Düzenlenmiş memcached-op/api/v1alpha1/memcached_types.go dosyası**</summary>
 
 ```go 
 /*
@@ -286,7 +286,7 @@ API için gerekli tanımlarımızı yaptık elimizde artık yönetilmesini isted
 
 <details>
 
-<summary>Düzenlenmiş memcached-op/internal/controller/memcached_controller.go dosyasi</summary>
+<summary>**Düzenlenmiş memcached-op/internal/controller/memcached_controller.go dosyası**</summary>
 
 ```go 
 /*
@@ -630,7 +630,7 @@ kubectl get pods
 İlk olarak yaratılan memcached CR'lari silinir ardından operatör undeploy edilir.
 
 ```sh
-kubectl delete memcached memcache-sample
+kubectl delete memcached memcached-sample
 ```
 
 ```sh

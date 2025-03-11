@@ -581,9 +581,9 @@ func (r *MemcachedReconciler) deploymentForMemcached(
 operator-sdk  edit  --multigroup=true
 ```
 
-Bu bölümde bazı ufak farklılıklardan bahsetmemiz gerekiyor. Multi Group API Mimarisini tercih ettiğinizde proje yapısını bir miktar değişiyor. Single Group yapida type'lar api/<version>/ altında bulunurken; Multi Group yapıda api/<group>/<version>/ altında bulunuyor.
+Bu bölümde bazı ufak farklılıklardan bahsetmemiz gerekiyor. Multi Group API Mimarisini tercih ettiğinizde proje yapısını bir miktar değişiyor. Single Group yapida type'lar api/(version)/ altında bulunurken; Multi Group yapıda api/(group)/(version)/ altında bulunuyor.
 
-Controller için ise durum şu şekilde: Single Group yapıda controller'lar internal/controller/ altında bulunurken; Multi Group yapıda internal/controller/<group>/ altında bulunuyor.
+Controller için ise durum şu şekilde: Single Group yapıda controller'lar internal/controller/ altında bulunurken; Multi Group yapıda internal/controller/(group)/ altında bulunuyor.
 
 main dosyası bu durumu otamatik olarak handlelayabiliyor.
 
